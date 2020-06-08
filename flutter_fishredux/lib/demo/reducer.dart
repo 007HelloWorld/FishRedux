@@ -13,7 +13,8 @@ Reducer<EntranceState> buildReducer() {
 
 EntranceState _changeTitle(EntranceState state, Action action) {
   final EntranceState newState = state.clone();
-  newState.title = '娃哈哈';
+  print('------------------------5');
+  newState.title = action.payload;
   return newState;
 }
 

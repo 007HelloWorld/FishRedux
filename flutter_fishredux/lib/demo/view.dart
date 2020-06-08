@@ -19,7 +19,9 @@ Widget buildView(EntranceState state, Dispatch dispatch, ViewService viewService
               style: TextStyle(color: Colors.white),
             ),
             onPressed: () {
-              dispatch(EntranceActionCreator.onChangeTitle());
+              String p = 'pjw';
+              print('------------------------1');
+              dispatch(EntranceActionCreator.onChangeTitle(p));
             }),
       ),
     ),

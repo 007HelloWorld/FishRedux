@@ -5,10 +5,12 @@ import 'state.dart';
 
 Effect<EntranceState> buildEffect() {
   return combineEffects(<Object, Effect<EntranceState>>{
-    EntranceAction.onChangeTitle: _onChangeTitle,
+  EntranceAction.onChangeTitle: _onChangeTitle,
   });
 }
 
 void _onChangeTitle(Action action, Context<EntranceState> ctx) {
-  ctx.dispatch(EntranceActionCreator.changeTitle());
+  String p = action.payload;
+  print('------------------------3');
+  ctx.dispatch(EntranceActionCreator.changeTitle(p));
 }

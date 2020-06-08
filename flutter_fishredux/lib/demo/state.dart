@@ -22,3 +22,5 @@ EntranceState initState(Map<String, dynamic> args) {
   state.title = '程序入口';
   return state;
 }
+
+
